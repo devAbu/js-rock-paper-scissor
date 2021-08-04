@@ -8,18 +8,20 @@ for (let i = 0; i < player.length; i++) {
     let playerClicked = player[i].value;
 
     if (playerClicked == compRandom) {
-      alert("Draw!");
+      alert(
+        `Draw! You selected ${playerClicked} --> Computer selected ${compRandom}`
+      );
     } else if (
       (playerClicked == "rock" && compRandom == "paper") ||
       (playerClicked == "paper" && compRandom == "scissors") ||
       (playerClicked == "scissors" && compRandom == "rock")
     ) {
       alert(
-        `You lose! You selected ${playerClicked} --> Computer Selected ${compRandom}`
+        `You lose! You selected ${playerClicked} --> Computer selected ${compRandom}`
       );
     } else {
       alert(
-        `You win! You selected ${playerClicked} --> Computer Selected ${compRandom}`
+        `You win! You selected ${playerClicked} --> Computer selected ${compRandom}`
       );
     }
   });
